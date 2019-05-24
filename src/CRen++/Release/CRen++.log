@@ -1,7 +1,5 @@
 ﻿  CRen++.cpp
-  Generating code
-  1 of 7 functions (14.3%) were compiled, the rest were copied from previous compilation.
-    0 functions were new in current compilation
-    0 functions had inline decision re-evaluated but remain unchanged
-  Finished generating code
-  CRen++.vcxproj -> A:\codes\github\CRen-\src\CRen++\Release\CRen++.exe
+a:\codes\github\cren-\src\cren++\cren++.cpp(4): fatal error C1083: Cannot open include file: 'game.hpp': No such file or directory
+  main.cpp
+a:\codes\github\cren-\src\cren++\main.cpp(8): error C2664: 'void CRenEngine::StartGame(char *,int,int,int,int,bool)': cannot convert argument 1 from 'const char [10]' to 'char *'
+  a:\codes\github\cren-\src\cren++\main.cpp(8): note: Conversion from string literal loses const qualifier (see /Zc:strictStrings)

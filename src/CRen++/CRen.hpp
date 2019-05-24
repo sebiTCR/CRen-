@@ -2,6 +2,7 @@
 #include <iostream>
 #include <string>
 #include <SDL2/SDL.h>
+#define main SDL_main
 using namespace std;
 class CRenEngine 
 {
@@ -12,12 +13,12 @@ class CRenEngine
 
 		CRenEngine();
 		~CRenEngine();
-		void StartGame(string GameName, int posX,int posY,int width,int height, bool fullscreen)
+		void StartGame(char *GameName, int posX,int posY,int width,int height, bool fullscreen)
 		{
-			GameWindow = SDL_CreateWindow("CRen++", SDL_WINDOWPOS_UNDEFINED, SDL_WINDOWPOS_UNDEFINED, SCREEN_WIDTH, SCREEN_HEIGHT, SDL_WINDOW_SHOWN);
+			GameWindow = SDL_CreateWindow(GameName,posX,posY, width, height, SDL_WINDOW_SHOWN);
 			if (GameWindow == NULL)
 			{
-				printf("Window could not be created! SDL_Error: %s\n", SDL_GetError());
+				printf("The game can't be loaded, SDL_Error: %s\n", SDL_GetError());
 				Running = false;
 			}
 			else
@@ -27,11 +28,10 @@ class CRenEngine
 
 			}
 		}
-		void say(string name, string text)
+		static void say(string name, string text)
 		{
 			string dialogue = name + ": " + text;
-			cout << dialogue;
+			cout << dialogue << endl;
 		}
-	private:
 		bool Running;
 };

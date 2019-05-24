@@ -1,0 +1,5 @@
+﻿  CRen++.cpp
+a:\codes\github\cren-\src\cren++\cren++.cpp(4): fatal error C1083: Cannot open include file: 'game.hpp': No such file or directory
+  main.cpp
+a:\codes\github\cren-\src\cren++\main.cpp(8): error C2664: 'void CRenEngine::StartGame(char *,int,int,int,int,bool)': cannot convert argument 1 from 'const char [10]' to 'char *'
+  a:\codes\github\cren-\src\cren++\main.cpp(8): note: Conversion from string literal loses const qualifier (see /Zc:strictStrings)

@@ -1,11 +1,6 @@
 #include "CRen.h"
-CRenEngine::CRenEngine()
-{
-    CRenEngine engine;
-    engine.game();
-}
 
-CRenEngine::~CRenEngine()
+int main()
 {
+    parseScript();
 }
-

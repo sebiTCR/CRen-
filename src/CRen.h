@@ -3,27 +3,23 @@
 
 #include <iostream>
 #include <string>
-#include "Game/game.cpp"
+#include <fstream>
+#include "crenlang.cpp"
 using namespace std;
-class CRenEngine 
-{
-	public:
 
 
-		CRenEngine();
-		~CRenEngine();
-		void game()
-		{
-			
-		}
-		void say(string name, string text) //It will be replaced in the future.
-		{
-			string dialogue = name + ": " + text;
-			cout << dialogue << endl;
-			system("pause");
-			
-		}
+
+		//void say(char* name,char* text) //It will be replaced in the future.
+		//{
+		//	char* dialogue = name; 
+		//	dialogue += ": ";
+		//	dialogue += text;
+		//	cout << dialogue << endl;
+		//	system("pause");
+		//	
+		//}
+
 		
-};
+
 
 #endif

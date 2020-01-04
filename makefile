@@ -1,6 +1,6 @@
 main:
-	g++ src/CRen.cpp -o game
+	g++ src/CRen.cpp -o game -Wno-all
 	mv game bin
-	clear
+
 	./bin/game
 

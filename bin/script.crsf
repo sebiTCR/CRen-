@@ -1,4 +1,12 @@
-
-<dialog> (sebiTCR)="So this is how CRen++ works right?"
-<dialog> (Maya)="Eh...Not really"
-<music> interesting
+<dialog>(SebiTCR) "Lemme teach ya some basics"
+<dialog>(SebiTCR) "we use the <dialog> tag to indicate a dialog in our script"
+<dialog>(SebiTCR) "We put our character's name in the brackets"
+<dialog>(Daneci) "Wait...Why?"
+<dialog>(SebiTCR) "Lets say that it is easier for me to code this"
+<dialog>(SebiTCR) "Easier..."
+<dialog>(SebiTCR) "Easier..."
+<dialog>(SebiTCR) "*Sad SebiTCR noises*"
+<dialog>(Alex) "Another unfinished project?"
+<dialog>(SebiTCR) "Yep, but this is a script file so wtf?"
+<dialog>(Daneci) "Learn swelte instea..."
+<dialog>(SebiTCR) "NOPE!"

@@ -15,22 +15,60 @@
 #include <iostream>
 #include <string>
 #include <fstream>
-#include "crenlang.cpp"
+#include "ENGINE/crenlang.h"
+#include "ENGINE/settings.h"
+
+
+
 using namespace std;
 
+class CRen
+{
+	public:
+		CRen();
+		~CRen();
+	
+		
+		string projectLocation;
+		Settings s;
 
+	
+		void start() //It starts the engine, and it loads the project
+		{
 
-		//void say(char* name,char* text) //It will be replaced in the future.
-		//{
-		//	char* dialogue = name; 
-		//	dialogue += ": ";
-		//	dialogue += text;
-		//	cout << dialogue << endl;
-		//	system("pause");
-		//	
-		//}
+			parseScript(projectLocation);
 
+		}
+	
+		void DefaultDir(int type, string dir) //use 1 as parameter to set a default project dir, or use 2 to get the default project dir (path)
+		{
+			switch (type)
+			{
+			case 1:
+	
+	
+				break;
+			case 2:
+				break;
+			
+			default:
+				break;
+			}
+		}
+		private:
 		
 
+};
+
+
+CRen::CRen()
+{
+   
+}
+
+CRen::~CRen()
+{
+    
+}                  
 
 #endif

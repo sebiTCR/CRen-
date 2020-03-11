@@ -1,4 +1,5 @@
-# CRenPlusPlus
+# Cren++                        
+                                     
 Open Source Visual novel engine made in C++ 
 
 
@@ -7,4 +8,4 @@ There are a lot of features missing in this 'engine'.
 
 # Documentation
 
-Still nothing
+Coming soon

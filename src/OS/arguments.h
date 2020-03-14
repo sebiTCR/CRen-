@@ -7,10 +7,38 @@
 //                                                                                __/ |                                   
 //                                                                               |___/                                     
 
-enum arg
+#include <iostream>
+
+using namespace std;
+
+class Args
 {
-    dir = 1,
-    credits = 2,
-    info = 3,
-    help = 4
+    public:
+
+
+        void help()
+        {
+            cout << "----------HELP-----------" << endl;    
+            cout << "|how to run it:         |" << endl;
+            cout << "|./engine [argument]    |" << endl;
+            cout << "|             ^         |" << endl;
+            cout << "|             |         |" << endl;//             _____    _______ 
+            cout << "|             |         |" << endl;//     /\     |  __ \  |__   __|
+            cout << "|Replace '[argument]'   |" << endl;//    /  \    | |__) |    | |
+            cout << "|with any arguments     |" << endl;//   / /\ \   |  _  /     | |   
+            cout << "|Listed below           |" << endl;//  / ____ \  | | \ \     | | 
+            cout << "|                       |" << endl;// /_/    \_\ |_|  \_\    |_|   
+            cout << "|--------arguments------|" << endl;//
+            cout << "|                       |" << endl;// I want to be as user friendly as possible
+            cout << "|open - Open a project  |" << endl;
+            cout << "|                       |" << endl;
+            cout << "|SetDefaultDir - open a |" << endl;
+            cout << "|project by default when|" << endl;
+            cout << "|you start the engine   |" << endl;
+            cout << "|                       |" << endl;
+            cout << "-------------------------" << endl;
+        }
+        
+
+
 };

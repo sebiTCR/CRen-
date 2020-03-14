@@ -3,32 +3,48 @@
 
 #include <fstream>
 #include <iostream>
-#include <json/reader.h>
-#include <json/value.h>
 #include <string>
 
 
 
 using namespace std;
+
 class Settings
 {
     public:
     
         string ProjectPath;
+       
+     
+      
+
         Settings()
         {
-            
             parseSettings();
         }
        
-       
+        void storeSettingDetails()
+        {
+            ifstream ifs(ProjectPath + "/cfg/settings.json");
+            string line;
+            
+            while(getline(ifs,line)) 
+            {
+                JSONSettingsData += line; 
+            }
+        }
+
+
         void parseSettings()
         {
             ifstream ifs(ProjectPath + "/cfg/settings.json");
+            
             if (ifs.is_open())
             {
-                cout << ifs.rdbuf();
-                ifs.close();
+                //TODO: PARSE FILE AND ADD THE CONTENTS IN A VARIABLE
+                storeSettingDetails();
+            
+                
             }
             
             if (ifs.bad())
@@ -39,7 +55,13 @@ class Settings
         }
         
         private:
-        ifstream ifs;
+   
+        char readBuffer[1024];
+        string JSONSettingsData = "";
+        
+        
+        //char * pathChar[ProjectPath.size() + 20] = ProjectPath;
+     
 };
 
 

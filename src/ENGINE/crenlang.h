@@ -9,7 +9,7 @@
 //                      0/10 Instructions unclear.Hacked NASA instead
 
 //                         [IMPORTANT]
-//                          NO "SELECT FOLDER" MENU FOR PROJECTS. TO BE IMPLEMENTED ASAP.
+//                         
 
 # define _POSIX_C_SOURCE 200809L
 
@@ -79,7 +79,7 @@ void parseScript(string dataPath)
 {   // ----VARIABLES----
 
 
-    scriptFile.open(dataPath + "/main.crsf");    
+    scriptFile.open(dataPath + "Data/main.crsf");    
     if(scriptFile.is_open())
     {
 

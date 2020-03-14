@@ -17,18 +17,18 @@ namespace notice
 
     void    logError(string input)
     {
-                // RED                               //Reset Color
-                //  |                                // |
-                //  V                                // V
+                // RED                                //Reset Color
+                //  |                                 // |
+                //  V                                 // V
         cout << "\033[31m" << "[Error]: " << input << "\033[0m" << endl;    
     }
     
     void    logWarning(string input)
     {
-                // Yellow                               //Reset color
-                //  |                                   //  |
-                //  V                                   //  V
-        cout << "\033[31m" << "[Warning]: " << input << "\033[33m" << endl;
+                // Yellow                                //Reset color
+                //  |                                    //  |
+                //  V                                    //  V
+        cout << "\033[33m"  << "[Warning]: " << input << "\033[0m"  << endl;
     }
 
     void    logGood(string input)

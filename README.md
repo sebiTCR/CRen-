@@ -1,4 +1,4 @@
-# Cren++                        
+# CRen++                        
                                      
 Open Source Visual novel engine made in C++ 
 
@@ -8,4 +8,11 @@ There are a lot of features missing in this 'engine'.
 
 # Documentation
 
-Coming soon
+## CRSF (CRen++ Script File)
+
+### Dialogs
+
+Example: 
+```
+<dialog>(name) "Yea, this is a dialog"
+```

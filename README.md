@@ -1,4 +1,4 @@
-# Cren++                        
+# CRen++                        
                                      
 Open Source Visual novel engine made in C++ 
 

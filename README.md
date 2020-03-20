@@ -1,6 +1,7 @@
 # CRen++                        
                                      
-Open Source Visual novel engine made in C++ 
+Open Source Visual novel engine made in C++.
+This engine **IS NOT** compatible with Windows!
 
 
 # Still in development!

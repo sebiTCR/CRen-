@@ -1,8 +1,12 @@
 #include "CRen.h"
 #include "OS/errorColorCodes.h"
 #include "OS/arguments.h"
+#include "ENGINE/settings.h"
+#include "ENGINE/maintenance.h"
 //#include <gtkmm/application.h>
 //#include "OS/IOFileDialog.h"
+
+
 
 
 
@@ -41,11 +45,19 @@ int main(int argc, char *argv[])
           args.help();
       }
 
-      else if (arg == "")
+      else if (arg == "init")
       {
+        Settings s(true);
+      }
 
-        notice::logError("No valid arguments detected! Type 'help' for more infos");
-        
+      else if (arg == "credits")
+      {
+        args.credits();
+      }
+
+      else if (argv[1] == NULL)
+      {
+        notice::logWarning("Sorry, the 'load default project at startup' is no longer available. It will be implemented in the near future!");
       }
 
     }

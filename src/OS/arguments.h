@@ -8,12 +8,16 @@
 //                                                                               |___/                                     
 
 #include <iostream>
+#include <nlohmann/json.hpp>
+using json = nlohmann::json;
 
 using namespace std;
 
 class Args
 {
     public:
+
+
 
 
         void help()
@@ -30,14 +34,44 @@ class Args
             cout << "|                       |" << endl;// /_/    \_\ |_|  \_\    |_|   
             cout << "|--------arguments------|" << endl;//
             cout << "|                       |" << endl;// I want to be as user friendly as possible
+            cout << "|init - if this is the  |" << endl;
+            cout << "|first time when you use|" << endl;
+            cout << "|this engine, use this  |" << endl;
+            cout << "|argument to setup the  |" << endl;
+            cout << "|engine.                |" << endl;
+            cout << "|                       |" << endl;
             cout << "|open - Open a project  |" << endl;
             cout << "|                       |" << endl;
             cout << "|SetDefaultDir - open a |" << endl;
             cout << "|project by default when|" << endl;
             cout << "|you start the engine   |" << endl;
             cout << "|                       |" << endl;
+            cout << "|Credits - Show credits |" << endl;
+            cout << "|                       |" << endl;            
+            cout << "------Important----------" << endl;
+            cout << "|Some features may not  |" << endl;
+            cout << "|work because this game |" << endl;
+            cout << "|engine is still in     |" << endl;
+            cout << "|development            |" << endl;
             cout << "-------------------------" << endl;
         }
+
+        void credits()
+        {
+            cout << "-------------------------" << endl;
+            cout << "|Developers:            |" << endl;
+            cout << "|-SebiTCR               |" << endl;
+            cout << "|-----------------------|" << endl;
+            cout << "|Open source libraries  |" << endl;
+            cout << "|(used in this project) |" << endl;
+            cout << "|     |   |   |         |" << endl;
+            cout << "|     V   V   V         |" << endl;
+            cout << "|                       |" << endl;
+            cout << "|JSON - nlohmann        |" << endl;
+            cout << "-------------------------" << endl;
+        }
+
+        
         
 
 

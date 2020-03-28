@@ -10,6 +10,7 @@
 #include <iostream>
 #include <string>
 
+
 using namespace std;
 
 namespace notice
@@ -36,6 +37,9 @@ namespace notice
                 // Green                                //Reset color
                 //  |                                   //  |
                 //  V                                   //  V
-        cout << "\033[32m" << "[Warning]: " << input << "\033[33m" << endl;
+        cout << "\033[32m" << "[Notice]: " << input << "\033[33m" << endl;
+        
     }
+
+
 }

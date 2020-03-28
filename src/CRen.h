@@ -30,18 +30,18 @@ class CRen
 	
 		
 		string projectLocation;
-		Settings s;
+		//Settings s;
 
 	
 		void start() //It starts the engine, and it loads the project
 		{
 
-			parseScript(projectLocation);
+			//parseScript(projectLocation);
 
 		}
 	
 		void DefaultDir(int type, string dir) //use 1 as parameter to set a default project dir, or use 2 to get the default project dir (path)
-		{
+		{									 // TODO: Implement this feature btw.
 			switch (type)
 			{
 			case 1:

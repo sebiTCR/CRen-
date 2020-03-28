@@ -8,13 +8,9 @@ If this is the first time when you use this engine, run **"./[filename] init"**
 # Still in development!
 There are a lot of features missing in this 'engine'.
 
-# Documentation
+# Important!
 
-## CRSF (CRen++ Script File)
-
-### Dialogs
-
-Example: 
+### If this is the first time when you run this engine, PLEASE use the "init" argument at startup
 ```
-<dialog>(name) "Yea, this is a dialog"
+./game init
 ```

@@ -14,3 +14,9 @@ There are a lot of features missing in this 'engine'.
 ```
 ./game init
 ```
+
+# Special thanks
+
+
+ ### [Jetbrains](https://www.jetbrains.com/?from=CRen++)
+ ![Jetbrains](./.github/jetbrains.png)

@@ -1,5 +1,5 @@
 # CRen++                        
-                                     
+(Project on-hold. Needs to be rewritted. Current plan: Fork K-Engine for CRenPlusPlus)                            
 Open Source Visual novel engine made in C++.
 This engine **IS NOT** compatible with Windows!
 ###
